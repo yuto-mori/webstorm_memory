@@ -1,0 +1,12 @@
+<templateSet group="original_sass">
+  <template name="inc" value="@include" description="sassインクルード" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="ext" value="@extend" description="sassエクステンド" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+</templateSet>

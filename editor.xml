@@ -1,0 +1,8 @@
+<application>
+  <component name="EditorSettings">
+    <option name="USE_SOFT_WRAPS" value="MAIN_EDITOR" />
+  </component>
+  <component name="LiveEditOptions" chromeUpdateApp="true" chromeUpdateOnChanges="true">
+    <option name="elementHighlighting" value="true" />
+  </component>
+</application>
