@@ -1,7 +1,7 @@
 <application>
   <component name="ApplicationTasksOptions">
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="---output-style expanded --source-map-contents --source-map-embed $ProjectFileDir$/sass -o $ProjectFileDir$/sass/" />
+      <option name="arguments" value="--output-style expanded --source-map-contents --source-map-embed $ProjectFileDir$/scss -o $ProjectFileDir$/scss/" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
@@ -13,7 +13,7 @@
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
-      <option name="program" value="C:/Program Files (x86)/Nodist/bin/node-sass.cmd" />
+      <option name="program" value="C:/Program Files (x86)/Nodist/bin/node-sass" />
       <option name="runOnExternalChanges" value="true" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
