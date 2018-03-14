@@ -21,14 +21,14 @@
       <envs />
     </TaskOptions>
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="--use autoprefixer --autoprefixer.browsers 'last 2 versions' $ProjectFileDir$/css/style.css -o $ProjectFileDir$/css/test.css" />
+      <option name="arguments" value="--use autoprefixer --autoprefixer.browsers 'last 2 versions' -o $ProjectFileDir$/css/style.min.css $ProjectFileDir$/css/style.css" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="css" />
       <option name="immediateSync" value="false" />
       <option name="name" value="autoprefixer" />
-      <option name="output" value="" />
+      <option name="output" value="v--use autoprefixer -o public/assets/css/style.min.css public/assets/css/style.css" />
       <option name="outputFilters">
         <array />
       </option>
