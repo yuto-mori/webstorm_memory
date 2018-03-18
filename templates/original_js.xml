@@ -11,10 +11,10 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="new_class" value="let $obj$ = new $Obj$($argument$);&#10;&#10;class $Obj$ {&#10;    constructor($argument$){$END$};&#10;    $END$&#10;};" description="constructor" toReformat="false" toShortenFQNames="true">
-    <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="new_class" value="class $Obj$ {&#10;    constructor($argument$){};&#10;};&#10;&#10;let $obj$ = new $Obj$($argument$);&#10;$END$" description="constructor" toReformat="false" toShortenFQNames="true">
     <variable name="Obj" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
