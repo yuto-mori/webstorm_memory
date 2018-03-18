@@ -1,5 +1,5 @@
 <templateSet group="original_js">
-  <template name="imm" value="(()=&gt;{&#10;&#10;})();&#10;" description="immediate function（即時関数）" toReformat="false" toShortenFQNames="true">
+  <template name="imm" value="(()=&gt;{&#10;&#10;})();&#10;$END$" description="immediate function（即時関数）" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -11,10 +11,10 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="new_class" value="class $Obj$ {&#10;    constructor($argument$){};&#10;};&#10;&#10;let $obj$ = new $Obj$($argument$);&#10;$END$" description="constructor" toReformat="false" toShortenFQNames="true">
-    <variable name="Obj" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="new_class" value="class $class$ {&#10;    constructor($argument$){};&#10;};&#10;&#10;let $var$ = new $class$($argument$);&#10;$END$" description="constructor" toReformat="false" toShortenFQNames="true">
     <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
