@@ -20,10 +20,11 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="switch" value="switch($obj$){&#10;    case $value$:&#10;    $function$&#10;    break;&#10;}" description="swich文" toReformat="false" toShortenFQNames="true">
+  <template name="switch" value="switch($obj$){&#10;    case $value$:&#10;    $function$&#10;    break;&#10;}&#10;$end$" description="swich文" toReformat="false" toShortenFQNames="true">
     <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
