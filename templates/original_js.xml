@@ -29,4 +29,15 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="new_class_ext" value="class $addClass$ extends $originalClass$ {&#10;    constructor($argument$){&#10;    super($argument$);&#10;    };&#10;    $function$(){&#10;    super.$function$();&#10;    }&#10;};&#10;&#10;let $var$ = new $addClass$($argument$);&#10;$END$" description="class継承" toReformat="false" toShortenFQNames="true">
+    <variable name="addClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="originalClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
