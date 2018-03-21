@@ -11,7 +11,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="new_class" value="class $class$ {&#10;    constructor($argument$){};&#10;};&#10;&#10;let $var$ = new $class$($argument$);&#10;$END$" description="constructor" toReformat="false" toShortenFQNames="true">
+  <template name="new_class" value="class $class$ {&#10;    constructor($argument$){};&#10;};&#10;&#10;let $var$ = new $class$($argument$);&#10;$END$" description="constructor(静的メソッドを入れるときは「static」)" toReformat="false" toShortenFQNames="true">
     <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
