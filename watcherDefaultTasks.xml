@@ -40,5 +40,25 @@
       <option name="workingDir" value="" />
       <envs />
     </TaskOptions>
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="postcss --use autoprefixer -o css/style3.css scss/style.css" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="css" />
+      <option name="immediateSync" value="false" />
+      <option name="name" value="Autoprefixer" />
+      <option name="output" value="" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="$USER_HOME$/.nodebrew/node/v8.9.4/lib/node_modules/autoprefixer/bin/autoprefixer" />
+      <option name="runOnExternalChanges" value="true" />
+      <option name="scopeName" value="Project Files" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="$USER_HOME$/.nodebrew/node/v8.9.4/lib/node_modules/autoprefixer/node_modules" />
+      <envs />
+    </TaskOptions>
   </component>
 </application>
