@@ -1,0 +1,32 @@
+<templateSet group="original_html">
+  <template name="&amp;quot;" value="&amp;quot;" description="クォーテーション" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="&amp;nbsp" value="&amp;nbsp" description="空白" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="&amp;amp;" value="&amp;amp;" description="アンパサンド" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="&amp;gt;" value="&amp;gt;" description="大なり" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="&amp;lt;" value="&amp;lt;" description="小なり" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="&amp;copy;" value="&amp;copy;" description="コピーライト" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
