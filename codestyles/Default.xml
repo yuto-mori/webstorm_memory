@@ -1,8 +1,13 @@
 <code_scheme name="Default" version="173">
+  <EjsCustomCodeStyleSettings>
+    <option name="SPACES_AFTER_COLON" value="false" />
+  </EjsCustomCodeStyleSettings>
   <HTMLCodeStyleSettings>
     <option name="HTML_ATTRIBUTE_WRAP" value="0" />
     <option name="HTML_TEXT_WRAP" value="0" />
     <option name="HTML_KEEP_LINE_BREAKS" value="false" />
+    <option name="HTML_ALIGN_TEXT" value="true" />
+    <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
   </HTMLCodeStyleSettings>
   <TypeScriptCodeStyleSettings>
     <option name="BLACKLIST_IMPORTS" value="" />
