@@ -1,0 +1,9 @@
+<templateSet group="html/xml">
+  <template name="pic" value="&lt;picture&gt;&#10;    &lt;source media=&quot;(min-width: 768px)&quot; srcset=&quot;$PcSrc$&quot;&gt;&#10;    &lt;source media=&quot;(max-width: 767px)&quot; srcset=&quot;$SpSrc$&quot;&gt;&#10;    &lt;img src=&quot;$PcSrc$&quot; alt=&quot;$END$&quot;&gt;&#10;&lt;/picture&gt;" description="picture tag" toReformat="false" toShortenFQNames="true">
+    <variable name="PcSrc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SpSrc" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
