@@ -1,0 +1,6 @@
+<templateSet group="Zen HTML">
+  <template name="br" value="&lt;br&gt;" description="&lt;br&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>

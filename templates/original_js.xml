@@ -104,4 +104,13 @@
   <template name="clone" value="$el$.cloneNode(true);&#10;$END$" description="要素の複製" toReformat="false" toShortenFQNames="true">
     <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
   </template>
+  <template name="nameSpace" value="let $ver$ = {};&#10;(function(){&#10;$END$&#10;$ver$.$Class$ = $Class$;&#10;})();&#10;&#10;let $class$ = new $ver$.$Class$($arg$)" description="名前空間" toReformat="false" toShortenFQNames="true">
+    <variable name="ver" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="arg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
