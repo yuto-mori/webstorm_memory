@@ -9,4 +9,13 @@
       <option name="CSS" value="true" />
     </context>
   </template>
+  <template name="for" value="@for $i from $befoeIndex$ through $afterIndex$ {&#10;    $roperty${&#10;        $value$&#10;    }&#10;}" description="sassのfor文 変数は #{$i} と入れる" toReformat="false" toShortenFQNames="true">
+    <variable name="befoeIndex" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="afterIndex" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="roperty" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
 </templateSet>

@@ -5,7 +5,8 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="domc" value="&quot;DOMContentLoaded&quot;&#10;$END$" description="&quot;DOMContentLoaded&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="eve-domc" value="window.addEventListener('DOMContentLoaded',function ($argument$) {&#10;    $END$&#10;},false);&#10;" description="&quot;DOMContentLoaded&quot;" toReformat="false" toShortenFQNames="true">
+    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -38,6 +39,25 @@
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="eve-load" value="window.addEventListener('load',function ($argument$) {&#10;    $END$&#10;},false);" description="loadイベント" toReformat="false" toShortenFQNames="true">
+    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="eve-click" value="$el$.addEventListener('click',function ($argument$event) {&#10;    (event.preventDefault) ? event.preventDefault():event.returnValue=false;&#10;    $END$&#10;},false);" description="clickイベント" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="eve-scroll" value="window.addEventListener('scroll',function ($argument$) {&#10;    $END$&#10;},false);" description="scroii イベント" toReformat="false" toShortenFQNames="true">
+    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
 </templateSet>
