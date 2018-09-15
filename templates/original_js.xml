@@ -5,14 +5,13 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="eve-domc" value="window.addEventListener('DOMContentLoaded',function ($argument$) {&#10;    $END$&#10;},false);&#10;" description="&quot;DOMContentLoaded&quot;" toReformat="false" toShortenFQNames="true">
-    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="eve-domc" value="window.addEventListener('DOMContentLoaded',function (event) {&#10;    $END$&#10;},false);&#10;" description="&quot;DOMContentLoaded&quot;" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="new_class" value="class $class$ {&#10;    constructor($argument$){};&#10;};&#10;&#10;let $var$ = new $class$($argument$);&#10;$END$" description="constructor(静的メソッドを入れるときは「static」)" toReformat="false" toShortenFQNames="true">
+  <template name="class" value="class $class$ {&#10;    constructor($argument$){};&#10;};&#10;&#10;let $var$ = new $class$($argument$);&#10;$END$" description="constructor(静的メソッドを入れるときは「static」)" toReformat="false" toShortenFQNames="true">
     <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
@@ -30,7 +29,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="new_class_ext" value="class $addClass$ extends $originalClass$ {&#10;    constructor($argument$){&#10;    super($argument$);&#10;    };&#10;    $function$(){&#10;    super.$function$();&#10;    }&#10;};&#10;&#10;let $var$ = new $addClass$($argument$);&#10;$END$" description="class継承" toReformat="false" toShortenFQNames="true">
+  <template name="class_ext" value="class $addClass$ extends $originalClass$ {&#10;    constructor($argument$){&#10;    super($argument$);&#10;    };&#10;    $function$(){&#10;    super.$function$();&#10;    }&#10;};&#10;&#10;let $var$ = new $addClass$($argument$);&#10;$END$" description="class継承" toReformat="false" toShortenFQNames="true">
     <variable name="addClass" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="originalClass" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
@@ -41,21 +40,63 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="eve-load" value="window.addEventListener('load',function ($argument$) {&#10;    $END$&#10;},false);" description="loadイベント" toReformat="false" toShortenFQNames="true">
-    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="eve-load" value="window.addEventListener('load',function (event) {&#10;    $END$&#10;},false);" description="loadイベント" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="eve-click" value="$el$.addEventListener('click',function ($argument$event) {&#10;    (event.preventDefault) ? event.preventDefault():event.returnValue=false;&#10;    $END$&#10;},false);" description="clickイベント" toReformat="false" toShortenFQNames="true">
+  <template name="eve-click" value="$el$.addEventListener('click',function (event) {&#10;    (event.preventDefault) ? event.preventDefault():event.returnValue=false;&#10;    $END$&#10;},false);" description="clickイベント" toReformat="false" toShortenFQNames="true">
     <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="eve-scroll" value="window.addEventListener('scroll',function ($argument$) {&#10;    $END$&#10;},false);" description="scroii イベント" toReformat="false" toShortenFQNames="true">
-    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="eve-scroll" value="window.addEventListener('scroll',function (event) {&#10;    $END$&#10;},false);" description="scroii イベント" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="eve-mouseenter" value="$el$.addEventListener('mouseenter',function (event) {&#10;    $END$&#10;},false);&#10;" description="mouseenter イベント" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="eve-mouseleave" value="$el$.addEventListener('mouseleave',function (event) {&#10;    $END$&#10;},false);&#10;" description="mouseleave イベント" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="eve-transitionend" value="$el$.addEventListener('transitionend',function (event) {&#10;    $END$&#10;},false);" description="transitionend　イベント" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="eve-animationend" value="$el$.addEventListener('animationend',function (event) {&#10;    $END$&#10;},false);" description="animationend イベント" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="delegate" value="    if (event.target.matches('$selector$')) {&#10;        $END$&#10;    }" description="delegate　addEventListenerの中に入れて使う" toReformat="false" toShortenFQNames="true">
+    <variable name="selector" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="get_nodes" value="Array.prototype.forEach.call($els$ function(el, index) {&#10;    $END$&#10;});" description="複数ノードの取得" toReformat="false" toShortenFQNames="true">
+    <variable name="els" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="mql" value="let $variable$ = window.matchMedia('screen and (max-width: $breakPoint$px)');&#10;&#10;function checkBreakPoint(mql) {&#10;    if (mql.matches) {&#10;        $sp_event$&#10;    } else {&#10;        $pc_event$&#10;    }&#10;}&#10;&#10;$variable$.addListener(checkBreakPoint);&#10;checkBreakPoint($variable$);" description="javascriptでブレイクポイント" toReformat="false" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="breakPoint" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="sp_event" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="pc_event" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
