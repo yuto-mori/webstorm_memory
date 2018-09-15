@@ -101,4 +101,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="clone" value="$el$.cloneNode(true);&#10;$END$" description="要素の複製" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
 </templateSet>
