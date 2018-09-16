@@ -113,4 +113,15 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="promise" value="function $functionName$($arg$){&#10;    return new Promise((resolve,rejects) =&gt; {&#10;        $processingInResolve$,&#10;    });&#10;}&#10;&#10;$functionName$($arg$).then( $resolve01$)&#10;.then($resolve02$,$rejects$);" description="promise" toReformat="false" toShortenFQNames="true">
+    <variable name="functionName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="arg" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="processingInResolve" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="resolve01" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="resolve02" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="rejects" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
