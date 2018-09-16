@@ -18,4 +18,24 @@
       <option name="CSS" value="true" />
     </context>
   </template>
+  <template name="mq-pc" value="@include mq-pc(){&#10;    $END$&#10;}" description="mq-pc mixin" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="mq-sp" value="@include mq-sp(){&#10;    $END$&#10;}" description="mq-sp mixin" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="fzSp" value="@include fzSp($END$);" description="fzSp mixin" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="fzPc" value="@include fzPc($END$);" description="fzPc mixin" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
 </templateSet>
