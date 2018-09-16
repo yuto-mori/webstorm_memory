@@ -128,4 +128,12 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="insertAdjacentHTML" value="$el$.insertAdjacentHTML($position$, $text$);&#10;$END$" description="insertAdjacentHTML innerHtml ではなくこちらを使う" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="position" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
