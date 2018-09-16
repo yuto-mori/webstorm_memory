@@ -2,4 +2,10 @@
   <template name="us" value="'use strict';&#10;$END$" description="Inserts 'use strict' statement" toReformat="true" toShortenFQNames="true">
     <context />
   </template>
+  <template name="deviece" value="var getDevice = (function () {&#10;        var ua = navigator.userAgent;&#10;        if (ua.indexOf('iPhone') &gt; 0 || ua.indexOf('iPod') &gt; 0 || ua.indexOf('Android') &gt; 0 &amp;&amp; ua.indexOf('Mobile') &gt; 0) {&#10;            return 'sp';&#10;        } else if (ua.indexOf('iPad') &gt; 0 || ua.indexOf('Android') &gt; 0) {&#10;            return 'tab';&#10;        } else {&#10;            return 'other';&#10;        }&#10;    })();&#10;    &#10;    if(getDevice === '$device$'){&#10;    $END$&#10;    }; " description="device判定コード" toReformat="false" toShortenFQNames="true">
+    <variable name="device" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
