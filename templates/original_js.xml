@@ -113,13 +113,17 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="promise" value="function $functionName$($arg$){&#10;    return new Promise((resolve,rejects) =&gt; {&#10;        $processingInResolve$,&#10;    });&#10;}&#10;&#10;$functionName$($arg$).then( $resolve01$)&#10;.then($resolve02$,$rejects$);" description="promise" toReformat="false" toShortenFQNames="true">
+  <template name="promise" value="function $functionName$($arg01$){&#10;    return new Promise((resolve,rejects) =&gt; {&#10;        if($if01$){&#10;            resolve($arg02$)&#10;        } else if($if02$){&#10;            rejects($arg03$);&#10;        }&#10;    });&#10;}&#10;&#10;$functionName$($arg$).then(($04$) =&gt; {function($04$){},return $function$()})&#10;.then(($05$) =&gt; {function($05$){})&#10;.catch((error) =&gt; {console.log(error)});" description="promise" toReformat="false" toShortenFQNames="true">
     <variable name="functionName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="arg01" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="if01" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="arg" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="processingInResolve" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="resolve01" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="resolve02" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="rejects" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="if02" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="arg03" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="arg02" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="04" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="05" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
