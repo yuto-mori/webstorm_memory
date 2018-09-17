@@ -136,4 +136,8 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="css_value" value="document.defaultView.getComputedStyle($el$,null).$style$" description="スタイルの値の取得（第二引数は擬似要素の文字列。通常はnull）" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
 </templateSet>
