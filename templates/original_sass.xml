@@ -38,4 +38,10 @@
       <option name="CSS" value="true" />
     </context>
   </template>
+  <template name="position" value="$el$.getBoundingClientRect();//エレメントの絶対位置&#10;let windowPositionTop = document.body.getBoundingClientRect().top;//windowの相対位置" description="エレメントの絶対位置とwindowの相対位置" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
