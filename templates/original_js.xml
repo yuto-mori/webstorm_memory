@@ -141,4 +141,22 @@
     <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />
   </template>
   <template name="preventDefault" value="(event.preventDefault) ? event.preventDefault():event.returnValue=false;" description="preventDefault" toReformat="false" toShortenFQNames="true" />
+  <template name="eve-animationstart" value="$el$.addEventListener('animationstart',function (event) {&#10;    $END$&#10;},false);" description="animationstart　イベント" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="eve-animationiteration" value="$el$.addEventListener('animationiteration',function (event) {&#10;    $END$&#10;},false);" description="animationiteration イベント(アニメーションしている間)" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="eve-transitionstart" value="$el$.addEventListener('transitionstart',function (event) {&#10;    $END$&#10;},false);" description="transitionstart イベント" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
