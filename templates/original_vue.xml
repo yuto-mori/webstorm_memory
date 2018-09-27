@@ -15,4 +15,13 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="vue-component" value="Vue.component('$tag$',{&#10;    template:'$html$'&#10;});&#10;&#10;new Vue({&#10;    el:'$el$'&#10;});&#10;$end$" description="vueでコンポーネントを作る" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="html" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
