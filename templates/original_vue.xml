@@ -24,4 +24,12 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="vue-components" value="new Vue({&#10;    el:'$el$',&#10;    components:{&#10;        '$tag$':{&#10;            template:'$html$'&#10;        }&#10;    }&#10;});$END$" description="ローカルコンポーネント" toReformat="false" toShortenFQNames="true">
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="html" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
