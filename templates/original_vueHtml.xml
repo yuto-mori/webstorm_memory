@@ -6,8 +6,8 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="v-if" value="v-if=&quot;$formula$&quot;$END$" description="vuejs if文" toReformat="false" toShortenFQNames="true">
-    <variable name="formula" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="v-if" value="v-if=&quot;$boolean$&quot;$END$" description="vuejs if文" toReformat="false" toShortenFQNames="true">
+    <variable name="boolean" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
@@ -16,6 +16,40 @@
     <variable name="attribute" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Modifier" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="vueData" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="v-model" value="v-model=&quot;$val$&quot;$END$" description="v-model データとフォームの入力項目のバインディング" toReformat="false" toShortenFQNames="true">
+    <variable name="val" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="v-show" value="v-show=&quot;$boolean$&quot;$END$" description="v-show display:none と　表示" toReformat="false" toShortenFQNames="true">
+    <variable name="boolean" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="v-if group" value="&lt;template v-if=&quot;$boolean$&quot;&gt;&#10;    $html$&#10;&lt;/template&gt;" description="v-if 複数を同時に処理" toReformat="false" toShortenFQNames="true">
+    <variable name="boolean" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="html" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="v-else" value="v-else=&quot;$boolean$&quot;$END$" description="vuejs else文" toReformat="false" toShortenFQNames="true">
+    <variable name="boolean" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="v-else-if" value="v-else-if=&quot;$boolean$&quot;$END$" description="vuejs else-if文" toReformat="false" toShortenFQNames="true">
+    <variable name="boolean" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="v-key" value=":key=&quot;$obj$.id&quot;" description="key for文で配列(中身オブジェクト)使うとき、任意のidをふる。" toReformat="false" toShortenFQNames="true">
+    <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
