@@ -1,0 +1,23 @@
+<templateSet group="original_vueHtml">
+  <template name="v-for" value="v-for = &quot;$valu$ in $arr$&quot;" description="vuejs for文" toReformat="false" toShortenFQNames="true">
+    <variable name="valu" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="arr" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="v-if" value="v-if=&quot;$formula$&quot;$END$" description="vuejs if文" toReformat="false" toShortenFQNames="true">
+    <variable name="formula" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="v-bind" value=":$attribute$$Modifier$=&quot;$vueData$&quot;$END$" description="vuejs 属性へのバインド （あれば修飾子 .prop .camel .sync）" toReformat="false" toShortenFQNames="true">
+    <variable name="attribute" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Modifier" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="vueData" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>

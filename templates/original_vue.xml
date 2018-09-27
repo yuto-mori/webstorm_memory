@@ -1,8 +1,9 @@
 <templateSet group="original_vue">
-  <template name="vue_start" value="var $val$ = new Vue({&#10;    template:'$html$'&#10;});&#10;&#10;$val$.$mount('$el$');" description="vue 基本形" toReformat="false" toShortenFQNames="true">
+  <template name="vue_start" value="var $val$ = new Vue({&#10;    el:'$el$',&#10;    data:{&#10;        $key$:$strArrObj$&#10;    }&#10;});$END$" description="vue 基本形" toReformat="false" toShortenFQNames="true">
     <variable name="val" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="html" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="strArrObj" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -28,6 +29,32 @@
     <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="html" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="vue-opt-computed" value="compute:{&#10;    $key$:function(){&#10;        return $val$&#10;    }&#10;}$END$" description="computed 算出プロパティ" toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="vue-opt-created" value="created:function(){&#10;    $processing$&#10;}$END$" description="created ライフサイクルフック" toReformat="false" toShortenFQNames="true">
+    <variable name="processing" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="vue-opt-methods" value="methods:function(){&#10;    $processing$&#10;}$END$" description="methods メソッド" toReformat="false" toShortenFQNames="true">
+    <variable name="processing" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="vue-opt-mounted" value="mounted:{&#10;    $key$:function(){&#10;        return $val$&#10;    }&#10;}$END$" description="mounted 算出プロパティ" toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
