@@ -22,6 +22,9 @@
   </template>
   <template name="v-model" value="v-model=&quot;$val$&quot;$END$" description="v-model データとフォームの入力項目のバインディング" toReformat="false" toShortenFQNames="true">
     <variable name="val" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
   </template>
   <template name="v-show" value="v-show=&quot;$boolean$&quot;$END$" description="v-show display:none と　表示" toReformat="false" toShortenFQNames="true">
     <variable name="boolean" expression="" defaultValue="" alwaysStopAt="true" />
