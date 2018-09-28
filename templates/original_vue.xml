@@ -60,4 +60,13 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="vue-opt-watch" value="watch:{&#10;    $watchData$:function($newData$$oldData$){&#10;        $processing$&#10;    }&#10;}$END$" description="vue watch 算出プロパティの状態を監視" toReformat="false" toShortenFQNames="true">
+    <variable name="watchData" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="newData" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="oldData" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="processing" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
