@@ -54,4 +54,11 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="v-on" value="@$event$=&quot;$function$&quot;" description="v-on イベントハンドリング" toReformat="false" toShortenFQNames="true">
+    <variable name="event" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
