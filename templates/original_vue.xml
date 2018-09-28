@@ -33,7 +33,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="vue-opt-computed" value="compute:{&#10;    $key$:function(){&#10;        return $val$&#10;    }&#10;}$END$" description="computed 算出プロパティ" toReformat="false" toShortenFQNames="true">
+  <template name="vue-opt-computed" value="computed:{&#10;    $key$:function(){&#10;        return $val$&#10;    }&#10;}$END$" description="computed 算出プロパティ" toReformat="false" toShortenFQNames="true">
     <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="val" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
