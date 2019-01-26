@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="index" type="HTML" />
       <mapping pattern="svg.svg" type="PLAIN_TEXT" />
       <mapping pattern="babelrc" type="PLAIN_TEXT" />
       <mapping pattern=".nojekyll" type="PLAIN_TEXT" />
