@@ -103,6 +103,9 @@
   </template>
   <template name="clone" value="$el$.cloneNode(true);&#10;$END$" description="要素の複製" toReformat="false" toShortenFQNames="true">
     <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
   </template>
   <template name="nameSpace" value="let $ver$ = {};&#10;(function(){&#10;$END$&#10;$ver$.$Class$ = $Class$;&#10;})();&#10;&#10;let $class$ = new $ver$.$Class$($arg$)" description="名前空間" toReformat="false" toShortenFQNames="true">
     <variable name="ver" expression="" defaultValue="" alwaysStopAt="true" />
@@ -139,6 +142,9 @@
   <template name="css_value" value="document.defaultView.getComputedStyle($el$,null).$style$" description="スタイルの値の取得（第二引数は擬似要素の文字列。通常はnull）" toReformat="false" toShortenFQNames="true">
     <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
   </template>
   <template name="preventDefault" value="(event.preventDefault) ? event.preventDefault():event.returnValue=false;" description="preventDefault" toReformat="false" toShortenFQNames="true">
     <context>
